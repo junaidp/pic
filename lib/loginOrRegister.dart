@@ -4,8 +4,9 @@ import 'package:pik/login.dart';
 import 'package:pik/register.dart';
 
 class LoginOrRegisterScreen extends StatelessWidget {
+  static final routeName = "LoginOrRegisterScreen";
   LoginOrRegisterScreen() {
-    FlutterBlue flutterBlue = FlutterBlue.instance;
+    /* FlutterBlue flutterBlue = FlutterBlue.instance;
     // Start scanning
     flutterBlue.startScan(timeout: Duration(seconds: 4));
 
@@ -18,12 +19,13 @@ class LoginOrRegisterScreen extends StatelessWidget {
     });
 
 // Stop scanning
-    flutterBlue.stopScan();
+    flutterBlue.stopScan();*/
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
         child: Container(
           child: Column(

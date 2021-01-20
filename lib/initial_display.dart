@@ -1,9 +1,16 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pik/loginOrRegister.dart';
 
 class InitialDisplay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(milliseconds: 2500), () {
+      Navigator.of(context).pushNamed(LoginOrRegisterScreen.routeName);
+    });
+
     return Scaffold(
       body: Container(
           decoration: BoxDecoration(color: Colors.blue[600]),

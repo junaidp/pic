@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
           Constants.routeMainScreen: (ctx) => MainScreen(),
           RegisterScreen.routeName: (ctx) => RegisterScreen(),
           Login.routeName: (ctx) => Login(),
+          LoginOrRegisterScreen.routeName: (ctx) => LoginOrRegisterScreen()
         });
   }
 }
