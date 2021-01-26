@@ -17,12 +17,19 @@ class Login extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              TextField(
-                controller: usernNameController,
-                decoration: InputDecoration(icon: null, hintText: "Username"),
-              ),
-              TextField(
+              TextFormField(
+                  controller: usernNameController,
+                  keyboardType: TextInputType.name,
+                  decoration: InputDecoration(icon: null, hintText: "Username"),
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return 'please enter name';
+                    } else
+                      return null;
+                  }),
+              TextFormField(
                 controller: passwordController,
+                keyboardType: TextInputType.visiblePassword,
                 decoration: InputDecoration(icon: null, hintText: "Password"),
               ),
               RaisedButton(
@@ -43,4 +50,6 @@ class Login extends StatelessWidget {
   register(BuildContext context) {
     Navigator.of(context).pushNamed(Constants.routeMainScreen);
   }
+
+  search() {}
 }
