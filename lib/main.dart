@@ -4,6 +4,7 @@ import 'package:pik/home.dart';
 import 'package:pik/initial_display.dart';
 import 'package:pik/login.dart';
 import 'package:pik/loginOrRegister.dart';
+import 'package:pik/mainscreen/accountProfile.dart';
 import 'package:pik/mainscreen/mainScreen.dart';
 import 'package:pik/register.dart';
 
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
           Constants.routeMainScreen: (ctx) => MainScreen(),
           RegisterScreen.routeName: (ctx) => RegisterScreen(),
           Login.routeName: (ctx) => Login(),
-          LoginOrRegisterScreen.routeName: (ctx) => LoginOrRegisterScreen()
+          LoginOrRegisterScreen.routeName: (ctx) => LoginOrRegisterScreen(),
+          AccountProfile.routeName: (ctx) => AccountProfile()
         });
   }
 }

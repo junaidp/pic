@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pik/advertisement.dart';
+import 'package:pik/mainscreen/bottomWidget.dart';
 import 'package:pik/mainscreen/destinationoffers.dart';
 import 'package:pik/mainscreen/topcities.dart';
 
@@ -49,6 +50,7 @@ class _MainScreenState extends State<MainScreen> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomWidget(),
     );
   }
 }
