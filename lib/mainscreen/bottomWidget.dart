@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pik/mainscreen/accountProfile.dart';
+import 'package:pik/mainscreen/account/accountProfile.dart';
 
 class BottomWidget extends StatelessWidget {
   BuildContext context;

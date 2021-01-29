@@ -4,6 +4,7 @@ import 'package:pik/advertisement.dart';
 import 'package:pik/mainscreen/bottomWidget.dart';
 import 'package:pik/mainscreen/destinationoffers.dart';
 import 'package:pik/mainscreen/topcities.dart';
+import 'package:pik/widgets/searchForm.dart';
 
 import '../appDrawer.dart';
 
@@ -30,20 +31,7 @@ class _MainScreenState extends State<MainScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              child: TextField(
-                  decoration: InputDecoration(
-                hintText: 'Seach/From',
-              )),
-              width: 150,
-            ),
-            Container(
-              child: TextField(
-                  decoration: InputDecoration(
-                hintText: 'Seach/Destincat',
-              )),
-              width: 150,
-            ),
+            SearchForm(),
             Advertisement(),
             TopCities(),
             DestinationOffers(),

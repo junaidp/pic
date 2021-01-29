@@ -4,7 +4,7 @@ import 'package:pik/home.dart';
 import 'package:pik/initial_display.dart';
 import 'package:pik/login.dart';
 import 'package:pik/loginOrRegister.dart';
-import 'package:pik/mainscreen/accountProfile.dart';
+import 'package:pik/mainscreen/account/accountProfile.dart';
 import 'package:pik/mainscreen/mainScreen.dart';
 import 'package:pik/register.dart';
 
