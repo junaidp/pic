@@ -10,32 +10,50 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('pik'),
-      ),
+      appBar: AppBar(),
       body: Container(
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextFormField(
-                  controller: usernNameController,
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(icon: null, hintText: "Username"),
-                  validator: (value) {
-                    if (value.isEmpty) {
-                      return 'please enter name';
-                    } else
-                      return null;
-                  }),
-              TextFormField(
-                controller: passwordController,
-                keyboardType: TextInputType.visiblePassword,
-                decoration: InputDecoration(icon: null, hintText: "Password"),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 150),
+                child: Image(image: AssetImage('assets/images/logo.png')),
               ),
-              RaisedButton(
-                  child: Text('Login'), onPressed: () => login(context)),
-              RaisedButton(
-                  child: Text('Register'), onPressed: () => register(context)),
+              SizedBox(
+                width: 300,
+                child: TextFormField(
+                    controller: usernNameController,
+                    keyboardType: TextInputType.name,
+                    decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.person), hintText: "Username"),
+                    validator: (value) {
+                      if (value.isEmpty) {
+                        return 'please enter name';
+                      } else
+                        return null;
+                    }),
+              ),
+              SizedBox(
+                width: 300,
+                child: TextFormField(
+                  controller: passwordController,
+                  keyboardType: TextInputType.visiblePassword,
+                  decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.lock), hintText: "Password"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 15.0),
+                child: SizedBox(
+                  width: 120,
+                  child: RaisedButton(
+                      color: Colors.yellow[700],
+                      textColor: Colors.white,
+                      child: Text('Login'),
+                      onPressed: () => login(context)),
+                ),
+              ),
             ],
           ),
         ),

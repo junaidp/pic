@@ -8,6 +8,8 @@ import 'package:pik/mainscreen/account/accountProfile.dart';
 import 'package:pik/mainscreen/mainScreen.dart';
 import 'package:pik/register.dart';
 
+import 'mainscreen/news.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -27,7 +29,8 @@ class MyApp extends StatelessWidget {
           RegisterScreen.routeName: (ctx) => RegisterScreen(),
           Login.routeName: (ctx) => Login(),
           LoginOrRegisterScreen.routeName: (ctx) => LoginOrRegisterScreen(),
-          AccountProfile.routeName: (ctx) => AccountProfile()
+          AccountProfile.routeName: (ctx) => AccountProfile(),
+          News.routeName: (ctx) => News()
         });
   }
 }

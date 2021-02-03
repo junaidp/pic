@@ -26,6 +26,31 @@ class _AppDrawerState extends State<AppDrawer> {
             leading: Icon(Icons.inbox_rounded),
             title: Text('Posteingang'),
           ),
+          Divider(),
+          ListTile(
+            leading: Icon(Icons.search),
+            title: Text('Pik Suchen'),
+          ),
+          Divider(),
+          ListTile(
+            leading: Icon(Icons.work),
+            title: Text('Pik Anbeiten'),
+          ),
+          Divider(),
+          ListTile(
+            leading: Icon(Icons.notifications_active),
+            title: Text('Meine Aktivitaten'),
+          ),
+          Divider(),
+          ListTile(
+            leading: Icon(Icons.bookmark),
+            title: Text('Merkliste'),
+          ),
+          Divider(),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text('Einstellungen'),
+          ),
         ],
       ),
     );

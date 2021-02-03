@@ -7,6 +7,7 @@ import 'package:pik/mainscreen/topcities.dart';
 import 'package:pik/widgets/searchForm.dart';
 
 import '../appDrawer.dart';
+import 'news.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -21,8 +22,10 @@ class _MainScreenState extends State<MainScreen> {
         title: Text('pik'),
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {},
+            icon: Icon(Icons.book),
+            onPressed: () {
+              Navigator.of(context).pushNamed(News.routeName);
+            },
           )
         ],
       ),

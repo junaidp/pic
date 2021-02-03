@@ -26,23 +26,35 @@ class LoginOrRegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Center(
-        child: Container(
+      body: Container(
+        child: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              RaisedButton(
-                  color: Colors.yellow,
-                  child: Text('Login'),
-                  onPressed: () {
-                    Navigator.of(context).pushNamed(Login.routeName);
-                  }),
-              RaisedButton(
-                  color: Colors.yellow,
-                  child: Text('Register'),
-                  onPressed: () {
-                    Navigator.of(context).pushNamed(RegisterScreen.routeName);
-                  }),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 150),
+                child: Image(image: AssetImage('assets/images/logo.png')),
+              ),
+              SizedBox(
+                width: 120,
+                child: RaisedButton(
+                    color: Colors.yellow[700],
+                    textColor: Colors.white,
+                    child: Text('Login'),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(Login.routeName);
+                    }),
+              ),
+              SizedBox(
+                width: 120,
+                child: RaisedButton(
+                    color: Colors.yellow[700],
+                    textColor: Colors.white,
+                    child: Text('Register'),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(RegisterScreen.routeName);
+                    }),
+              ),
             ],
           ),
         ),

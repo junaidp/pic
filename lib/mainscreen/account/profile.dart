@@ -9,20 +9,24 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
+      width: 250,
       child: Column(
         children: [
           TextFormField(
-            decoration: InputDecoration(labelText: 'Name'),
+            decoration: InputDecoration(
+                prefixIcon: Icon(Icons.person), labelText: 'Name'),
           ),
           TextFormField(
-            decoration: InputDecoration(labelText: 'Email'),
+            decoration: InputDecoration(
+                prefixIcon: Icon(Icons.email), labelText: 'Email'),
           ),
           TextFormField(
-            decoration: InputDecoration(labelText: 'Mobile No'),
+            decoration: InputDecoration(
+                prefixIcon: Icon(Icons.phone), labelText: 'Mobile No'),
           ),
           TextFormField(
-            decoration: InputDecoration(labelText: 'Birthday'),
+            decoration: InputDecoration(
+                prefixIcon: Icon(Icons.cake), labelText: 'Birthday'),
           ),
         ],
       ),

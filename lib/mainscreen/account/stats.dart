@@ -9,8 +9,7 @@ class _StatsState extends State<Stats> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('Stats'),
-      
+      child: Text('Ratings'),
     );
   }
 }

@@ -12,7 +12,10 @@ class _AdvertisementState extends State<Advertisement> {
       padding: EdgeInsets.only(top: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [Image(image: AssetImage('assets/images/nikeLogo.png'))],
+        children: [
+          SizedBox(
+              child: Image(image: AssetImage('assets/images/nikeLogo.png')))
+        ],
       ),
     );
   }

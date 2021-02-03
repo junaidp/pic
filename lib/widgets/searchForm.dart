@@ -10,14 +10,14 @@ class SearchForm extends StatelessWidget {
               decoration: InputDecoration(
             hintText: 'Seach/From',
           )),
-          width: 150,
+          width: 200,
         ),
         Container(
           child: TextField(
               decoration: InputDecoration(
-            hintText: 'Seach/Destincat',
+            hintText: 'Search/Destination',
           )),
-          width: 150,
+          width: 200,
         ),
       ],
     );
